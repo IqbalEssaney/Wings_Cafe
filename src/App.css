@@ -1,0 +1,484 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('./high-resolution-wallpaper-food.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #d9d9a8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Centered General Container */
+.centered-container {
+  background-color: rgba(34, 34, 34, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  padding: 60px;
+  width: 100%;
+  max-width: 2000px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* Flexbox Layout for App */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  margin-top: 40px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  color: #cddc39;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar a {
+  color: #cddc39;
+  margin: 0 10px;
+  font-size: 1em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #8fbc8f;
+}
+
+/* Dashboard Content */
+.dashboard-container {
+  background-color: rgba(34, 34, 34, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin: 10px auto;
+  width: 95%;
+  max-width: 1500px;
+  color: #c5e1a5;
+}
+
+/* Product List Table */
+.product_list_table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: rgba(34, 34, 34, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.product_list_table th,
+.product_list_table td {
+  text-align: left;
+  padding: 10px;
+  color: #c5e1a5;
+  font-size: 1em;
+  border-bottom: 1px solid #444;
+}
+
+.product_list_table th {
+  background-color: #333;
+  font-size: 1.1em;
+}
+
+.product_list_table tr:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.product_list_table td button {
+  margin: 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Edit Button */
+button.edit-button {
+  background-color: orange;
+  color: white;
+}
+
+button.edit-button:hover {
+  background-color: darkorange;
+}
+
+/* Delete Button */
+button.delete-button {
+  background-color: red;
+  color: white;
+}
+
+button.delete-button:hover {
+  background-color: darkred;
+}
+
+/* Footer */
+.footer {
+  background-color: rgba(34, 34, 34, 0.5);
+  color: #c5e1a5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1.2em;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 1.5em;
+}
+
+.social-icon:hover {
+  opacity: 0.8;
+}
+
+/* Form Styles */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(34, 34, 34, 0.6);
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.form-group input,
+.input-login {
+  border: 1px solid rgba(73, 72, 72, 0.5);
+  background-color: rgba(34, 34, 34, 0.5);
+  border-radius: 6px;
+  font-size: 1em;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 90%;
+}
+
+button,
+.button-login {
+  background-color: #a0c334;
+  border: none;
+  border-radius: 6px;
+  color: #121212;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 10px;
+  width: 90%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.button-login:hover {
+  background-color: #8fbc8f;
+}
+
+/* Login and Sign-Up Styles */
+.container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container-login {
+  background-color: rgba(34, 34, 34, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  max-width: 450px;
+  text-align: center;
+}
+
+.form-container-login h2 {
+  color: #8bc34a;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.toggle-link-login {
+  color: #c5e1a5;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-top: 15px;
+}
+
+.toggle-link-login:hover {
+  text-decoration: underline;
+}
+
+.login-message {
+  color: #ff6b6b;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  font-size: 1em;
+  text-align: center;
+}
+
+/* Top Section */
+.top-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 10px auto;
+  height: 400px;
+}
+
+/* Chart and Image Containers */
+.chart-container {
+  flex-grow: 1;
+  width: 65%;
+  margin: 0 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  color: #d9f1f1;
+  position: relative;
+  height: 100%;
+}
+
+.image-container {
+  flex-grow: 1;
+  width: 35%;
+  margin: 0 10px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  color: #d9f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rotating-image {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+/* Chart Text and Line Styles */
+.chart-container .chartjs-render-monitor {
+  color: hsla(224, 14%, 85%, 0.905);
+}
+
+.chart-container .chartjs-tooltip {
+  color: #ffeb3b;
+  font-size: 1.2em;
+}
+
+.chart-container .chartjs-x-axis-label,
+.chart-container .chartjs-y-axis-label {
+  color: #caced7;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.chart-container .chartjs-grid-line {
+  stroke: hsl(50, 80%, 50%);
+}
+
+.chartjs-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ffeb3b;
+}
+
+.chartjs-legend {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #8bc34a;
+}
+
+/* Titles */
+h2 {
+  color: #8bc34a;
+  font-size: 1.5em;
+  text-align: center;
+} 
+/* UserManagement.css */
+
+.container, .user-management-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-group input[type="text"], 
+.form-group input[type="password"] {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+}
+.login-container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: rgba(34, 34, 34, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container input[type="email"]  {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.5em; /* 200% increase in placeholder and text size */
+  border-radius: 6px;
+  border: 1px solid #666;
+  margin-bottom: 15px;
+  background-color: rgba(50, 50, 50, 0.8);
+  color: #e0e0e0;
+}
+
+.login-container button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #45a049;
+}
+
+/* User List Table Styles */
+.userlist-table {
+  width: 100%;
+  background-color: #222; /* Dark gray background for better contrast */
+  color: #f0f0f0; /* Light text color for readability */
+  border-collapse: collapse;
+  font-size: 1.2em; /* Slightly increased font size */
+}
+
+.userlist-table th, .userlist-table td {
+  padding: 12px 16px; /* Added padding for better spacing */
+  border: 1px solid #444; /* Slight border for separation */
+  text-align: center;
+}
+
+.userlist-table th {
+  background-color: #333; /* Darker background for headers */
+  color: #ffd700; /* Gold color for headers to make them stand out */
+}
+
+.userlist-table tr:nth-child(even) {
+  background-color: #2c2c2c; /* Slightly lighter background for even rows */
+}  
+.userlist-table tbody tr {
+  background-color: #222; /* Darker background for table body */
+  color: #f0f0f0; /* Light text color for readability */
+}
+
+.userlist-table tbody tr:nth-child(even) {
+  background-color: #2b2b2b; /* Slightly lighter background for alternating rows */
+}
+
+.userlist-table tbody td {
+  padding: 16px;
+  border: 1px solid #444;
+  text-align: center;
+}
+
+.userlist-table .edit-button,
+.userlist-table .delete-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.userlist-table .edit-button {
+  background-color: #5bc0de; /* Bright blue for edit button */
+  color: white;
+}
+
+.userlist-table .edit-button:hover {
+  background-color: #31b0d5; /* Darker blue on hover */
+}
+
+.userlist-table .delete-button {
+  background-color: #d9534f; /* Red for delete button */
+  color: white;
+}
+
+.userlist-table .delete-button:hover {
+  background-color: #c9302c; /* Darker red on hover */
+}
