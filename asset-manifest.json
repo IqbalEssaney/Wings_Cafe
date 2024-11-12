@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Wings_Cafe/static/css/main.003660c0.css",
+    "main.js": "/Wings_Cafe/static/js/main.8b5aa018.js",
+    "static/media/high-resolution-wallpaper-food.jpg": "/Wings_Cafe/static/media/high-resolution-wallpaper-food.835cc86f26f102244149.jpg",
+    "index.html": "/Wings_Cafe/index.html",
+    "main.003660c0.css.map": "/Wings_Cafe/static/css/main.003660c0.css.map",
+    "main.8b5aa018.js.map": "/Wings_Cafe/static/js/main.8b5aa018.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.003660c0.css",
+    "static/js/main.8b5aa018.js"
+  ]
+}
